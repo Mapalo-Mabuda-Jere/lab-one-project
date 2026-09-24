@@ -16,13 +16,17 @@ public class HelloJavaFX extends Application {
         button.setOnAction(event ->
             message.setText("Great! You clicked the button.")
         );
+        Button reserButton = new Button("Reset");
+        reserButton.setOnAction(event->
+                message.setText( "Welcome ,Mapalo Mabuda Jere!" )
+        );
 
         VBox layout = new VBox(20);
         layout.setAlignment(Pos.CENTER);
         layout.getChildren().addAll(message, button);
 
         Scene scene = new Scene(layout, 500, 300);
-        stage.setTitle("My First JavaFX Application");
+        stage.setTitle("JavaFX App - 202507890 ");
         stage.setScene(scene);
         stage.show();
     }
